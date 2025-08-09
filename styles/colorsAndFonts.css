@@ -1,0 +1,25 @@
+:root {
+  --back-ground: rgb(29, 36, 46);
+  --light-blue: rgb(51, 153, 255);
+  /* --btn-blue:hsl(240, 66%, 63%); */
+  --Dark-blue: rgba(51, 153, 255, 0.33);
+  --light-gray: rgb(230, 231, 231);
+  --dark-gray: rgb(42, 42, 60);
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --footer-color: rgb(42, 42, 60);
+  --project-shadow: rgba(0, 0, 0, 0.27);
+  --form-bg: rgb(29, 29, 44);
+  /*-----Fonts-----*/
+  --h1-fontSize: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
