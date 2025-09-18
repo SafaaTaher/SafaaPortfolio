@@ -46,7 +46,7 @@ nav ul {
   justify-content: center;
   gap: clamp(1rem, 3vw, 2rem);
 }
-nav ul > li a {
+nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ nav ul > li a {
   position: relative;
   display: inline-block;
 }
-nav ul li a::after {
+nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -69,16 +69,16 @@ nav ul li a::after {
   transition: width 0.3s;
 }
 
-nav ul li a:hover::after {
+nav a:hover::after {
   width: 100%;
 }
-nav ul li a i {
+nav i {
   font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: clamp(0.3rem, 0.5rem+ 0.2vw, 1rem);
   color: var(--light-blue);
   opacity: 0.8;
 }
-nav ul li a:hover {
+nav a:hover {
   color: var(--light-blue);
 }
 a[target="_blank"] {
@@ -87,7 +87,6 @@ a[target="_blank"] {
 }
 
 /*----------------About----------------*/
-/* Wrapper to limit width and apply padding */
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -115,21 +114,22 @@ a[target="_blank"] {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: clamp(0.7rem, 1vw, 0.7rem);
 }
-.MyData_left h1 span,
-h2 span {
+.MyData_left span {
   color: var(--light-blue);
 }
 .MyData_left h2 {
   font-size: clamp(1.3rem, 2.5vw, 2.25rem);
-  margin-top: -0.8rem; /* Adjusted to remove extra space */
+  margin-top: -0.8rem; 
   margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .MyData_left p {
-  font-size: clamp(1rem, 1.1rem + 0.2vw, 1.125rem); /* 16-18px */
+  font-size: clamp(0.8rem, 1.1rem + 0.2vw, 1.125rem); /* 16-18px */
   line-height: 1.7;
   max-width: 37.5rem;
   margin-top: 0;
+  text-align: justify;
+  hyphens:manual; 
 }
 .bt_icon {
   margin-top: 2rem;
@@ -192,7 +192,7 @@ h2 span {
   font-size: var(--h1-fontSize);
   margin-bottom: 3.125rem; /* 50px */
 }
-.education h1 span {
+.education span {
   color: var(--light-blue);
 }
 
@@ -230,7 +230,7 @@ h2 span {
   padding: 1.5625rem;
   box-shadow: 0 0 0.2625rem var(--Dark-blue);
   transition: transform 0.3s ease;
-  text-align: left;
+  text-align: left;/*need to change: Red Flag*/
   width: 26rem;
   box-sizing: border-box;
   animation: fadeIn 0.6s ease forwards;
@@ -308,7 +308,7 @@ h2 span {
   font-size: var(--h1-fontSize);
   margin-bottom: 3.125rem; /* 50px */
 }
-.projects h1 span {
+.projects span {
   color: var(--light-blue);
 }
 
@@ -328,7 +328,6 @@ h2 span {
   text-align: left;
   width: 100%;
   max-width: unset;
-  box-sizing: border-box;
 }
 .project-group:hover {
   transform: translateY(-8px);
